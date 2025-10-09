@@ -1,6 +1,4 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "../components/Layout/Layout";
+import { Routes, Route } from "react-router-dom";
 
 // Pages
 import Home from "../pages/Home/Home";
@@ -13,28 +11,24 @@ import Contact from "../pages/Contact/Contact";
 
 export default function AppRoutes() {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/ministries" element={<Ministries />} />
-          <Route path="/sermons" element={<Sermons />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/give" element={<Give />} />
-          <Route path="/contact" element={<Contact />} />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/ministries" element={<Ministries />} />
+      <Route path="/sermons" element={<Sermons />} />
+      <Route path="/events" element={<Events />} />
+      <Route path="/give" element={<Give />} />
+      <Route path="/contact" element={<Contact />} />
 
-          {/* Optional: 404 page */}
-          <Route
-            path="*"
-            element={
-              <h1 className="text-center mt-10 text-2xl text-gray-700">
-                Page Not Found
-              </h1>
-            }
-          />
-        </Routes>
-      </Layout>
-    </Router>
+      {/* Optional: 404 page */}
+      <Route
+        path="*"
+        element={
+          <h1 className="text-center mt-10 text-2xl text-gray-700">
+            Page Not Found
+          </h1>
+        }
+      />
+    </Routes>
   );
 }
