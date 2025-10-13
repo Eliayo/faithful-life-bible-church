@@ -7,6 +7,7 @@ import Sermons from "../pages/Sermons/Sermons";
 import Ministries from "../pages/Ministries/Ministries";
 import Events from "../pages/Events/Events";
 import Give from "../pages/Give/Give";
+import VisitUs from "../pages/Visit/VisitUs";
 import Contact from "../pages/Contact/Contact";
 import ScrollToTop from "../components/Layout/ScrollToTop";
 
@@ -22,6 +23,7 @@ export default function AppRoutes() {
         <Route path="/events" element={<Events />} />
         <Route path="/give" element={<Give />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/visit" element={<VisitUs />} />
 
         {/* Optional: 404 page */}
         <Route

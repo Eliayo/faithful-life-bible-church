@@ -6,6 +6,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -27,34 +28,42 @@ export default function Footer() {
           <h3 className="font-semibold mb-3 text-lg">Quick Links</h3>
           <ul className="space-y-2 text-gray-200 text-sm">
             <li>
-              <a href="/" className="hover:text-green-300 transition">
+              <Link to="/" className="hover:text-green-300 transition">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-green-300 transition">
+              <Link to="/about" className="hover:text-green-300 transition">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/ministries" className="hover:text-green-300 transition">
+              <Link
+                to="/ministries"
+                className="hover:text-green-300 transition"
+              >
                 Ministries
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/sermons" className="hover:text-green-300 transition">
+              <Link to="/sermons" className="hover:text-green-300 transition">
                 Sermons
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/events" className="hover:text-green-300 transition">
+              <Link to="/events" className="hover:text-green-300 transition">
                 Events
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-green-300 transition">
+              <Link to="/visit" className="hover:text-green-300 transition">
+                Visit
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-green-300 transition">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -66,7 +75,7 @@ export default function Footer() {
             <li className="flex items-start gap-2">
               <MapPin className="w-7 h-7 md:h-9 md:w-9 mt-1 text-green-400" />
               1, Anifowose Street, Off Ejio Road, Arigbajo B/Stop, Ifo, Ewekoro
-              LGA, Ogun State
+              LGA, Ogun State, Nigeria
             </li>
             <li className="flex items-start gap-2">
               <Phone className="w-5 h-5 md:w-6 md:h-6 mt-1 text-green-400" />

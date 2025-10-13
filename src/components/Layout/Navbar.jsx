@@ -12,6 +12,7 @@ export default function Navbar() {
     { to: "/sermons", label: "Sermons" },
     { to: "/events", label: "Events" },
     { to: "/give", label: "Give" },
+    { to: "/visit", label: "Visit Us" },
     { to: "/contact", label: "Contact" },
   ];
 
