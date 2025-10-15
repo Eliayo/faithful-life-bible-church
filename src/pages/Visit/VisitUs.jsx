@@ -133,9 +133,9 @@ export default function VisitUs() {
       >
         <iframe
           title="Faithful Life Bible Church Location"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d304.64033508300196!2d3.208091076702295!3d6.855625715264444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1760368283759!5m2!1sen!2sng"
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1162.3799410172446!2d3.2081275232663122!3d6.855661657759203!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1760521837866!5m2!1sen!2sng"
           width="100%"
-          height="400"
+          height="450"
           allowFullScreen=""
           loading="lazy"
           className="border-0 w-full"
