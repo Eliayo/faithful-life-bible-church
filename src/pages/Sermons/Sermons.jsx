@@ -20,7 +20,7 @@ export default function Sermons() {
     {
       id: 1,
       title: "Walking in Faith",
-      preacher: "Pastor John Doe",
+      preacher: "Pastor Enoch Oluwatosin",
       date: "September 14, 2025",
       category: "Sunday Message",
       image: sermon1,
@@ -29,7 +29,7 @@ export default function Sermons() {
     {
       id: 2,
       title: "The Power of Prayer",
-      preacher: "Rev. Sarah Olatunde",
+      preacher: "Pastor Enoch Oluwatosin",
       date: "September 7, 2025",
       category: "Bible Study",
       image: sermon2,
@@ -38,7 +38,7 @@ export default function Sermons() {
     {
       id: 3,
       title: "Living with Purpose",
-      preacher: "Pastor James Okoro",
+      preacher: "Pastor Enoch Oluwatosin",
       date: "August 31, 2025",
       category: "Sunday Message",
       image: sermon8,
@@ -47,7 +47,7 @@ export default function Sermons() {
     {
       id: 4,
       title: "Anchored in Hope",
-      preacher: "Pastor John Doe",
+      preacher: "Pastor Enoch Oluwatosin",
       date: "August 24, 2025",
       category: "Special",
       image: sermon4,
@@ -56,7 +56,7 @@ export default function Sermons() {
     {
       id: 5,
       title: "Grace That Frees",
-      preacher: "Rev. Sarah Olatunde",
+      preacher: "Pastor Enoch Oluwatosin",
       date: "August 17, 2025",
       category: "Bible Study",
       image: sermon5,
@@ -145,14 +145,13 @@ export default function Sermons() {
                 className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-medium transition cursor-pointer ${
                   filter === cat
                     ? "bg-green-700 text-white shadow-md"
-                    : "bg-green-50 text-green-700 hover:bg-green-100"
+                    : "bg-green-100 text-green-700 hover:bg-green-200"
                 }`}
               >
                 {cat}
               </button>
             ))}
           </div>
-
           <div className="text-sm text-gray-500 hidden md:block">
             {filteredSermons.length} Sermons
           </div>
@@ -162,64 +161,56 @@ export default function Sermons() {
       {/* SERMON GRID */}
       <section className="py-14 px-6">
         <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: { staggerChildren: 0.12 },
-              },
-            }}
-          >
-            {filteredSermons.map((s) => (
-              <motion.article
-                key={s.id}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden "
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0 },
-                }}
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="relative h-56">
-                  <img
-                    src={s.image}
-                    alt={s.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-800/30 to-transparent"></div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={filter} // forces rerender when category changes
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+              className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+              {filteredSermons.map((s) => (
+                <motion.article
+                  key={s.id}
+                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <div className="relative h-56">
+                    <img
+                      src={s.image}
+                      alt={s.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-green-800/30 to-transparent"></div>
 
-                  <button
-                    onClick={() => openSermon(s)}
-                    aria-label={`Play ${s.title}`}
-                    className="absolute left-4 bottom-4 inline-flex items-center gap-2 bg-white/90 text-green-700 px-3 py-2 rounded-full shadow-md hover:scale-105 transition cursor-pointer"
-                  >
-                    <PlayCircle className="w-5 h-5" />
-                    <span className="text-sm font-medium">Watch</span>
-                  </button>
+                    <button
+                      onClick={() => openSermon(s)}
+                      aria-label={`Play ${s.title}`}
+                      className="absolute left-4 bottom-4 inline-flex items-center gap-2 bg-white/90 text-green-700 px-3 py-2 rounded-full shadow-md hover:scale-105 transition cursor-pointer"
+                    >
+                      <PlayCircle className="w-5 h-5" />
+                      <span className="text-sm font-medium">Watch</span>
+                    </button>
 
-                  <div className="absolute right-3 top-3 bg-white/90 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
-                    {s.category}
+                    <div className="absolute right-3 top-3 bg-white/90 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+                      {s.category}
+                    </div>
                   </div>
-                </div>
 
-                <div className="p-5">
-                  <h3 className="text-lg font-semibold text-green-800 mb-2">
-                    {s.title}
-                  </h3>
-                  <div className="flex items-center justify-between text-sm text-gray-500">
-                    <div>{s.preacher}</div>
-                    <div>{s.date}</div>
+                  <div className="p-5">
+                    <h3 className="text-lg font-semibold text-green-800 mb-2">
+                      {s.title}
+                    </h3>
+                    <div className="flex items-center justify-between text-sm text-gray-500">
+                      <div>{s.preacher}</div>
+                      <div>{s.date}</div>
+                    </div>
                   </div>
-                </div>
-              </motion.article>
-            ))}
-          </motion.div>
+                </motion.article>
+              ))}
+            </motion.div>
+          </AnimatePresence>
 
           {/* No results */}
           {filteredSermons.length === 0 && (

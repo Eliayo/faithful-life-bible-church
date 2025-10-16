@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoImg from "../../assets/vite.png"; 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +21,17 @@ export default function Navbar() {
     <nav className="bg-white shadow-md fixed w-full z-50 border-b border-green-100 font-pop">
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-green-800">
-          Faithful<span className="text-green-600">Life</span>
+        <Link to="/" className="flex items-center space-x-2">
+          {/* Logo Image (always visible) */}
+          <img
+            src={logoImg}
+            alt="Faithful Life Logo"
+            className="h-8 w-8 object-contain"
+          />
+          {/* Logo Text (hidden on small screens) */}
+          <span className="text-2xl font-bold text-green-800 hidden md:inline">
+            Faithful<span className="text-green-600">Life</span>
+          </span>
         </Link>
 
         {/* Mobile Toggle */}
