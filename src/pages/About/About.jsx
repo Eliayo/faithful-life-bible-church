@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import churchImage from "../../assets/church-building.jpg";
 import bgImage from "../../assets/church-community-bg2.jpg";
+import pastorImage from "../../assets/pastor.jpg";
 import { Link } from "react-router-dom";
 import {
   Heart,
@@ -198,7 +199,7 @@ export default function About() {
           >
             <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-green-100">
               <img
-                src="/src/assets/pastor.jpg"
+                src={pastorImage}
                 alt="Lead Pastor"
                 className="w-96 h-full object-contain object-center transform scale-110"
               />
