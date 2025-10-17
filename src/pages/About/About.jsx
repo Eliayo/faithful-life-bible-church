@@ -201,7 +201,7 @@ export default function About() {
               <img
                 src={pastorImage}
                 alt="Lead Pastor"
-                className="w-96 h-full object-contain object-center transform scale-110"
+                className="w-96 h-full object-contain object-center transform scale-150"
               />
             </div>
           </motion.div>
