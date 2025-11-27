@@ -140,9 +140,10 @@ export default function About() {
                 Our Mission
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                To transform lives through the Word of God, nurture spiritual
-                growth, and raise a generation of believers who walk in faith,
-                love, and excellence.
+                To build, raise, and equip highly informed and responsible
+                Christians. Peaceful, purposeful, and powerful soldiers of
+                Christ with pure minds and SPIRITUAL faithful lives of global
+                relevance, as we advance the kingdom of our God and His Christ.
               </p>
             </motion.div>
 
@@ -159,9 +160,8 @@ export default function About() {
                 Our Vision
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                To be a light to the nations, building a global community of
-                believers committed to spreading the Gospel and living the
-                abundant life in Christ.
+                To journey steadfastly toward our promised land till we possess
+                it, exercise dominion on earth and make heaven at last
               </p>
             </motion.div>
 

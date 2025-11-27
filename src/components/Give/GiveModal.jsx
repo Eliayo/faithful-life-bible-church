@@ -48,10 +48,10 @@ Bank: Guaranty Trust Bank
         {/* Account Details */}
         <div className="bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200 text-left relative">
           <p className="font-medium text-gray-900">Account Name:</p>
-          <p className="text-gray-700">Faithful Life Bible Church</p>
+          <p className="text-gray-700">Oluwatosin Enoch Oluwasina</p>
 
           <p className="font-medium text-gray-900 mt-3">Account Number:</p>
-          <p className="text-gray-700">0123456789</p>
+          <p className="text-gray-700">0247543132</p>
 
           <p className="font-medium text-gray-900 mt-3">Bank Name:</p>
           <p className="text-gray-700">Guaranty Trust Bank</p>

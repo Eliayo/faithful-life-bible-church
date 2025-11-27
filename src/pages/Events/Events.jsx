@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Calendar, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import eventsBg from "../../assets/events-bg.jpg";
-import event5 from "../../assets/event5.jpg";
+// import event5 from "../../assets/event5.jpg";
 import event2 from "../../assets/event2.jpg";
 import event4 from "../../assets/event4.jpg";
 import event6 from "../../assets/event6.jpg";
@@ -12,32 +12,32 @@ export default function Events() {
   const upcomingEvents = [
     {
       id: 1,
-      title: "Faith and Family Conference",
-      date: "November 25, 2025",
-      time: "10:00 AM",
+      title: "Youth and Teens",
+      date: "Sunday 21 December 2025",
+      time: "8:00 AM",
       location: "Church Auditorium",
-      image: event5,
-    },
-    {
-      id: 2,
-      title: "Youth Empowerment Summit",
-      date: "December 8, 2025",
-      time: "9:00 AM",
-      location: "Youth Hall",
       image: event4,
     },
+    // {
+    //   id: 2,
+    //   title: "Youth Empowerment Summit",
+    //   date: "December 8, 2025",
+    //   time: "9:00 AM",
+    //   location: "Youth Hall",
+    //   image: event4,
+    // },
   ];
 
   const pastEvents = [
     {
       id: 1,
-      title: "Women's Prayer Retreat",
-      date: "August 2025",
+      title: "Youth and Teens",
+      date: "November 2025",
       image: event2,
     },
     {
       id: 2,
-      title: "Men’s Conference 2025",
+      title: "Youth and Teens",
       date: "July 2025",
       image: event6,
     },

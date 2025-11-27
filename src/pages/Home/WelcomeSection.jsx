@@ -48,8 +48,10 @@ export default function WelcomeSection() {
                 Our Mission
               </h3>
               <p className="text-green-600 leading-relaxed">
-                To preach the Gospel to all nations, nurture disciples, and
-                empower believers to live victoriously through faith in Christ.
+                To build, raise, and equip highly informed and responsible
+                Christians. Peaceful, purposeful, and powerful soldiers of
+                Christ with pure minds and SPIRITUAL faithful lives of global
+                relevance, as we advance the kingdom of our God and His Christ.
               </p>
             </div>
 
@@ -58,9 +60,8 @@ export default function WelcomeSection() {
                 Our Vision
               </h3>
               <p className="text-green-600 leading-relaxed">
-                To build a community where the love of Christ transforms lives,
-                families, and generations through worship, service, and
-                outreach.
+                To journey steadfastly toward our promised land till we possess
+                it, exercise dominion on earth and make heaven at last
               </p>
             </div>
           </div>

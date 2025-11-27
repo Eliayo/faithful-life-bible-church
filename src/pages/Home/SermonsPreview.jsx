@@ -9,23 +9,23 @@ import sermon3 from "../../assets/sermon3.jpg";
 const sermons = [
   {
     id: 1,
-    title: "Living by Faith, Not by Sight",
+    title: "Views of Christ as Relating to Wisdom",
     speaker: "Pastor Enoch Oluwatosin",
-    date: "September 15, 2025",
+    date: "Sunday 9 November 2025",
     image: sermon1,
   },
   {
     id: 2,
-    title: "The Power of Persistent Prayer",
-    speaker: "Pastor Enoch Oluwatosin",
-    date: "September 22, 2025",
+    title: "Nigerian Youths and The Principal Thing",
+    speaker: "Evang. Elijah Oluwatosin",
+    date: "Sunday 16 November 2025",
     image: sermon2,
   },
   {
     id: 3,
-    title: "Walking in the Spirit Daily",
+    title: "The Seven Pillars of Wisdom",
     speaker: "Pastor Enoch Oluwatosin",
-    date: "September 29, 2025",
+    date: "Sunday 23 November 2025",
     image: sermon3,
   },
 ];
